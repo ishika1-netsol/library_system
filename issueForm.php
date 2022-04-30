@@ -73,7 +73,7 @@ if (isset($_POST['create'])) {
                             <div class="card-body">
                                 <h4 class="card-title">Issue Form</h4>
                          
-                                <form class="forms-sample"  method="post">
+                                <form class="forms-sample"  method="POST">
                                     <?php if (isset($error)) { ?>
                                         <div class="alert alert-danger" role="alert">
                                             <?php

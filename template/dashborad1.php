@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['id'])) {
- 
+
     header("location: http://localhost/library%20system/userlogin.php");
     exit();
 }
@@ -81,7 +81,7 @@ if (!isset($_SESSION['id'])) {
                             <div class="profile-name">
                                 <h5 class="mb-0 font-weight-normal"><?php if (isset($_SESSION['name']))
                                                                         echo $_SESSION['name'] ?></h5>
-                            
+
                             </div>
                         </div>
                         <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -126,14 +126,14 @@ if (!isset($_SESSION['id'])) {
                 </li>
 
                 <li class="nav-item menu-items">
-                    <a class="nav-link" href="http://localhost/library%20system/bookForm.php">
+                    <a class="nav-link" href="http://localhost:8000/bookForms.php">
                         <span class="menu-icon">
                             <i class="mdi mdi-playlist-play"></i>
                         </span>
                         <span class="menu-title">Form Elements</span>
                     </a>
                 </li>
-               
+
                 <li class="nav-item menu-items">
                     <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                         <span class="menu-icon">
@@ -144,15 +144,15 @@ if (!isset($_SESSION['id'])) {
                     </a>
                     <div class="collapse" id="auth">
                         <ul class="nav flex-column sub-menu">
-                         
-                            <li class="nav-item"> <a class="nav-link" href="http://localhost/library%20system/StudentlistTable.php"> Book Table </a>
+
+                            <li class="nav-item"> <a class="nav-link" href="http://localhost:8000/Studentlist.php"> Book Table </a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link" href="http://localhost/library%20system/IssueTable.php"> Issue Table </a>
+                            <li class="nav-item"> <a class="nav-link" href="http://localhost:8000/IssueTable.php"> Issue Table </a>
                             </li>
                         </ul>
                     </div>
                 </li>
-              
+
                 <li class="nav-item menu-items">
                     <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                         <span class="menu-icon">
@@ -163,10 +163,10 @@ if (!isset($_SESSION['id'])) {
                     </a>
                     <div class="collapse" id="auth">
                         <ul class="nav flex-column sub-menu">
-                    
-                            <li class="nav-item"> <a class="nav-link" href="http://localhost/library%20system/bookForms.php"> Book Form </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="http://localhost/library%20system/IssuesForm.php"> Issue Form </a></li>
-                           
+
+                            <li class="nav-item"> <a class="nav-link" href="http://localhost:8000/bookForms.php"> Book Form </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="http://localhost:8000/IssuesForm.php"> Issue Form </a></li>
+
                         </ul>
                     </div>
                 </li>
